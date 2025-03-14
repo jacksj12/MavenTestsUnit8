@@ -6,21 +6,39 @@ public class Unit8 {
     // Instructions: Traverse the 2D array and calculate the sum of all elements.
     public static int sumOfElements(int[][] array) {
         // TODO: Implement this method
-        return 0;  // Placeholder return value
+        int sum = 0;
+        for(int[] nums: array){
+            for(int num : nums)
+                sum += num;
+        }
+        return sum;  // Placeholder return value
     }
 
     // 2. Method to count how many times a specific number appears in a 2D array
     // Instructions: Traverse the 2D array and count the number of times a specified value appears.
     public static int countOccurrences(int[][] array, int value) {
         // TODO: Implement this method
-        return 0;  // Placeholder return value
+        int count = 0;
+        for(int[] nums: array){
+            for(int num : nums){
+                if(num == value)
+                    count++;
+            }
+        }
+        return count;  // Placeholder return value
     }
 
     // 3. Method to find the maximum element in a 2D array
     // Instructions: Traverse the 2D array and find the maximum element.
     public static int findMax(int[][] array) {
-        // TODO: Implement this method
-        return 0;  // Placeholder return value
+        int min = arrary[0][0];
+        for(int[] nums: array){
+            for(int num : nums){
+                if(min > num)
+                    min = num;
+            }
+        }
+        return min;  // Placeholder return value
     }
 
     // 4. Method to reverse the rows of the 2D array
